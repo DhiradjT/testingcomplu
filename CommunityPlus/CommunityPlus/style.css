@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Signika', sans-serif; */
+    /* font-family: "Averta"; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* start hero styling */
+
+.leftside, .rightside {
+    height: 100vh;
+    width: 100%;
+}
+
+.leftside {
+    background-color: #F9F5E8;
+}
+
+.rightside {
+    background-color: #95CA95;
+}
+
+.hero-button {
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    background-color: #008000;
+}
+
+
+.hero-header-text {
+    font-size: 113px;
+    margin-top: 150px;
+    color: #000;
+    font-weight: 900;
+}
+
+span.hero-header-text {
+    font-size: 113px;
+    margin-top: 150px;
+    color: #000;
+    text-decoration: underline #5596E8;
+    text-decoration-thickness: 5px;
+}
+
+.hero-header-text-2 {
+    color: #00D36C;
+}
+
+.hero-sub-text {
+    color: #706C6C;
+    font-size: 20px;
+}
+
+.hero-button {
+    padding: 15px 45px 15px 45px;
+    border: 2px solid;
+}
+
+.hero-image img {
+    margin-top: 120px;
+    position: relative;
+    right: 12px;
+    
+}
+
+.nav-item {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 607px;
+}
+
+i.bi.bi-facebook {
+    font-size: 35px;
+  }
+  
+i.bi.bi-instagram {
+    font-size: 35px;
+}
+
+i.bi.bi-linkedin {
+    font-size: 35px;
+}
+
+i.bi.bi-twitter {
+    font-size: 35px;
+}
+
+i.bi.bi-circle-fill {
+    position: relative;
+    bottom: 8px;
+    font-size: 10px;
+}
+
+/* end hero styling */
+
+
+
+
+/* start about styling */
+
+section.overons {
+    margin-top: 200px;
+}
+
+section.overons {
+    margin-bottom: 200px;
+}
+
+
+.intro-overons {
+    color: #707070;
+}
+
+.about-button {
+    position: relative;
+    top: 180px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid;
+    color: #fff;
+    background-color: #008000;
+}
+
+h2.about-text {
+    color: #000;
+}
+
+span.about-h2-text {
+    color: #000;
+    text-decoration: underline #95CA95;
+    text-decoration-thickness: 5px;
+}
+
+.about-text {
+    position: relative;
+    top: 150px;
+    color: #707070;
+    font-weight: 600;
+}
+
+p.about-text {
+    position: relative;
+    top: 170px;
+}
+
+
+
+
+.zoom-about {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom-about img {
+    width: 100%;
+    display: block;
+    transition: transform 2s;
+}
+
+.zoom-about:hover img {
+    transform: scale(1.3);
+}
+
+
+/* end hero styling */
+
+
+/* start samenwerken styling */
+
+/* end samenwerken styling */
+
+
+
+
+
+
+/* start recente projecten styling  */
+
+.card-title-projecten {
+    color:#008000;
+    font-weight: bold;
+}
+
+.card-text-projecten {
+    font-weight: 900;
+}
+
+.projecten-button {
+    padding: 10px 30px 10px 30px;
+    border: 2px solid;
+    color: #fff;
+    background-color: #008000;
+}
+
+
+.section-header{
+    color: #008000;
+}
+
+hr {
+    width: 25%;
+    border: none;
+    border-top: 3px solid #008000;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: content-box; 
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+
+
+.zoom {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom img {
+    width: 100%;
+    display: block;
+    transition: transform 2s;
+}
+
+.zoom:hover img {
+    transform: scale(1.3);
+}
+
+
+p.projecten-subtext {
+    font-size: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-link {
+    padding: 8px 12px;
+    margin: 0 4px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .page-link:hover {
+    background-color: #ddd;
+  }
+
+
+/* end recente projecten styling */
+
+
+
+/* start subbackground styling */
+
+
+.subbackground {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)),url("images/jumping.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 700px;
+    margin-top: 200px;
+    text-shadow: 5px 5px 15px black;
+}
+
+h1.subbackground-header {
+    margin-top: 100px;
+}
+
+span.subbackground-h1-text {
+    text-decoration: underline #5596E8;
+    text-decoration-thickness: 5px;
+}
+
+.subbackground-text {
+    margin-top: 30px;
+}
+
+
+/* end subbackground styling */
+
+
+
+/* start contact styling */
+
+.contact {
+    margin-top: 200px;
+}
+
+.contact-header {
+    font-weight: 900;
+}
+
+.contact-subheader {
+    font-size: 20px;
+}
+
+a.link {
+    color: #000;
+}
+
+
+input {
+    border: 2px solid black;
+}
+
+
+
+
+/* end contact styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start about page styling */
+
+.card-img-top.person {
+    align-self: center; 
+    height: 250px;
+    width: 250px;
+}
+
+span.hero-h2-about {
+    color: #2E89FC;
+}
+
+p.subtext-about {
+    font-size: 20px;
+}
+
+.fly-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: flyIn 0.5s ease forwards;
+    animation-delay: 0.2s; /* Adjust the delay as needed */
+  }
+  
+  @keyframes flyIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+.card-img {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+
+.card-text-teamleden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.card-header {
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-subtext {
+    color: #fff;
+    font-weight: 200;
+}
+
+.card-testimonial .card {
+    background-color: #2E89FC;
+}
+
+
+.card-title-testimonial {
+    font-weight: 600;
+}
+
+section.adresses {
+    margin-top: 200px;
+}
+
+section.visie {
+    margin-top: 350px;
+}
+
+section.jaarverslagen {
+    margin-top: 200px;
+}
+
+section.beleidsplannen {
+    margin-top: 150px;
+}
+
+.link-with-icon {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px; /* Adjust this value to control the distance of the arrow movement */
+    text-decoration: none;
+    color: #000; /* Change the color as needed */
+  }
+  
+  .link-with-icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    transition: right 0.3s ease; /* Apply the transition to the right property */
+  }
+  
+  .link-with-icon:hover i {
+    right: -20px; /* Adjust this value to control the amount of movement */
+    color: #000;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+
+
+.col-md-6.under {
+    position: relative;
+    top: 250px;
+}
+
+section.project-subcards {
+    margin-top: 200px;
+}
+
+
+  
+/* start footer styling @aboutpage */
+
+section.footer {
+    margin-top: 350px;
+    /* background-image: url(images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px; */
+}
+
+
+
+
+.hero-h2-agenda {
+    font-size: 70px;
+}
+
+span.hero-h2-agenda {
+    font-size: 70px;
+    text-decoration: underline #95CA95;
+    text-decoration-thickness: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+p.listheader {
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 500;
+}
+
+li {
+    list-style-type: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+a.footer {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.download-button {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.5s, color 0.5s;
+}
+
+a.download-button:hover {
+    text-decoration: none;
+    color: #008000;
+}
+
+
+
+
+
+p.p-contact {
+    text-align: right;
+    color: #fff;
+}
+
+h4.contact-number {
+    text-align: right;
+    color: #fff;
+}
+
+.footer-button {
+    padding: 10px 30px 10px 30px;
+    border: 2px solid;
+    text-align: right;
+}
+
+p.copyright-text {
+    margin-top: 100px;
+    color: #fff;
+}
+
+
+/* end footer styling @everywhere */
+
+
+/* end about page styling */
+
+
+
+
+
+
+
+
+
+
+
+
+/* start team page styling */
+
+section.team {
+    margin-top: 100px;
+}
+
+h2.team-h2 {
+    font-size: 50px;
+}
+
+span.team-h2-seperate {
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Averta";
+    font-size: 45px;
+}
+
+p.card-text-role {
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Averta";
+    font-size: 20px;
+}
+
+
+
+
+
+/* end team page styling */
+
+
+
+
+
+
+/* start testimonial page styling */
+
+.background-testimonial img {
+    width: 100%;
+}
+
+section.written-testimonials {
+    margin-top: 100px;
+}
+
+
+
+
+/* end testimonial page styling */
+
+
+/* start contact page styling */
+
+section.contact-hero {
+    background-image: url(images/contact-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1071px;
+    margin-top: 100px;
+}
+
+h1.hero-contact {
+    font-size: 55px;
+}
+
+p.paragraph-contact {
+    font-size: 20px;
+}
+
+/* end contact page styling */
