@@ -73,8 +73,13 @@ span.hero-header-text {
     
 }
 
+.navbar-toggler {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+  }
+
 .nav-item {
-    padding: 10px;
+    padding-right: 8px;
     font-size: 20px;
 }
 
@@ -82,9 +87,15 @@ span.hero-header-text {
     color: #000;
 }
 
-.navbar-brand img {
-    width: 100px;
-    height: 607px;
+.navbar-brand {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.navbar-brand img{
+    margin: 0;
+    width: 125px;
+    height: 82px;
 }
 
 i.bi.bi-facebook {
@@ -288,6 +299,13 @@ p.projecten-subtext {
     text-shadow: 5px 5px 15px black;
 }
 
+.projecten-button {
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    background-color: #008000;
+}
+
+
 h1.subbackground-header {
     margin-top: 100px;
 }
@@ -394,6 +412,26 @@ p.subtext-about {
   }
 
 
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  #scrollToTopBtn:hover {
+    opacity: 0.8;
+  }
+
+
 
 .card-img {
     position: relative;
@@ -467,11 +505,43 @@ section.beleidsplannen {
     color: #000;
   }
 
+  
+
+
+
+  .right-with-icon {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px; /* Adjust this value to control the distance of the arrow movement */
+    text-decoration: none;
+    color: #000; /* Change the color as needed */
+  }
+  
+  .right-with-icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; /* Change 'right' to 'left' */
+    transition: left 0.3s ease; /* Apply the transition to the left property */
+  }
+  
+  .right-with-icon:hover i {
+    left: -20px; /* Adjust this value to control the amount of movement */
+    color: #000;
+  }
+
+
+
+
   a:hover {
     color: #000;
   }
 
 
+  .col-md-6.sepo {
+    position: relative;
+    left: 50px;
+  }
 
 .col-md-6.under {
     position: relative;
@@ -483,18 +553,139 @@ section.project-subcards {
 }
 
 
+
+
+@media screen and (max-width:768px) {
+
+   .big-picture-container {
+      display: none;
+    }
+
+    p.paragraph-text {
+        font-size: 16px;
+    }
+    
+    .col-md-6.under {
+        position: relative;
+        top: 150px;
+    }
+
+    #scrollToTopBtn {
+        display: block;
+      }
+
+    .about-1-image img {
+        display: none;
+    }
+
+    
+  .col-md-6.sepo {
+    position: relative;
+    left: 0px;
+  }
+
+
+
+
+
+
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 /* start footer styling @aboutpage */
 
 section.footer {
-    margin-top: 350px;
-    /* background-image: url(images/footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 380px; */
+    margin-top: 250px;
 }
 
 
+.footer-16371 {
+    padding: 7rem 0;
+ }
+    .footer-16371 .footer-site-logo {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 900; }
+      .footer-16371 .footer-site-logo a {
+        text-decoration: none;
+        color: #2E89FC; }
+         span.footer-site-logo {
+            color: #008000 ;
+        }
+    .footer-16371 .nav-links {
+      padding: 0;
+      margin: 0; }
+      .footer-16371 .nav-links li {
+        display: inline-block; }
+        .footer-16371 .nav-links li a {
+            text-decoration: none;
+          padding: 10px;
+          color: #000;
+          transition: transform 0.5s, color 0.5s; }
+          .footer-16371 .nav-links li a:hover {
+            color: #008000; }
+    .footer-16371 .social h3 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000; }
+    .footer-16371 .social ul li {
+      display: inline-block; }
+      .footer-16371 .social ul li a {
+        display: inline-block;
+        padding: 10px; }
+      .footer-16371 .social ul li.in a {
+        color: #000; }
+      .footer-16371 .social ul li.tw a {
+        color: #000; }
+      .footer-16371 .social ul li.fb a {
+        color: #000; }
+      .footer-16371 .social ul li.dr a {
+        color: #000; }
+        .footer-16371 .social ul li.in:hover a {
+            color: #007bff; }
+          .footer-16371 .social ul li.tw:hover a {
+            color: #007bff; }
+          .footer-16371 .social ul li.fb:hover a {
+            color: #008000; }
+          .footer-16371 .social ul li.dr:hover a {
+            color: #008000; }
+    .footer-16371 .copyright {
+      color: #999999; }
+
+      .social ul.list-unstyled li a i {
+        display: inline-block;
+        transition: transform 0.3s ease; /* Add a transition for the transform property */
+      }
+      
+      .social ul.list-unstyled li a i:hover {
+        transform: translateY(-5px); /* Move the icon up by 5 pixels on hover */
+      }
 
 
 .hero-h2-agenda {
@@ -583,7 +774,9 @@ p.copyright-text {
 
 
 
-
+p.paragraph-text {
+    font-size: 20px;
+}
 
 
 
@@ -594,14 +787,18 @@ section.team {
 }
 
 h2.team-h2 {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+p.team-sub-text {
+    font-size: 20px;
 }
 
 span.team-h2-seperate {
     font-style: italic;
     font-weight: bold;
     font-family: "Averta";
-    font-size: 45px;
+    font-size: 35px;
 }
 
 p.card-text-role {

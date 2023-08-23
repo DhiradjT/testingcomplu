@@ -1,13 +1,13 @@
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animated');
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-  
-  const master = document.querySelectorAll('.fly-in');
-  master.forEach(master => {
-    observer.observe(master);
-  });
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300 && window.innerWidth >= 768) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
