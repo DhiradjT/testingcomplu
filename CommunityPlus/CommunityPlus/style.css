@@ -16,9 +16,9 @@ body {
 
 
 .custom-container {
-    max-width: 600px; /* Set a maximum width for centering content */
+    max-width: 600px; 
     height: 100vh;
-    margin: 0 auto; /* Center the container horizontally */
+    margin:  auto; 
 }
 
 
@@ -614,6 +614,14 @@ section.project-subcards {
       display: none;
     }
  
+    .hero-header-text {
+        font-size: 93px;
+    }
+
+    span.hero-header-text {
+        font-size: 93px;
+    }
+
     /* p.paragraph-text {
         font-size: 16px !important;
     }
