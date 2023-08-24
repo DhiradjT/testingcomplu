@@ -15,6 +15,14 @@ body {
 }
 
 
+.custom-container {
+    max-width: 600px; /* Set a maximum width for centering content */
+    height: 100vh;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
 /* start hero styling */
 
 .leftside, .rightside {
@@ -30,12 +38,32 @@ body {
     background-color: #95CA95;
 }
 
+
+
+
+
+
 .hero-button {
-    padding: 15px 45px 15px 45px;
-    color: #fff;
+    position: relative;
+    top: 30px;
+    padding: 20px 45px 20px 45px;
+    border: 2px solid;
+    color:#fff;
     background-color: #008000;
+    transition: background-color 0.3s;
 }
 
+
+
+.hero-button:hover {
+    color: #fff;
+    background-color: #0da80d;
+}
+
+.col-md-6.hero-half-2 {
+    background-color: #95CA95;
+    height: 100%;
+}
 
 .hero-header-text {
     font-size: 113px;
@@ -61,17 +89,13 @@ span.hero-header-text {
     font-size: 20px;
 }
 
-.hero-button {
-    padding: 15px 45px 15px 45px;
-    border: 2px solid;
-}
-
 .hero-image img {
     margin-top: 120px;
     position: relative;
     right: 12px;
     
 }
+
 
 .navbar-toggler {
     border: none; /* Remove the border */
@@ -131,8 +155,8 @@ section.overons {
     margin-top: 200px;
 }
 
-section.overons {
-    margin-bottom: 200px;
+section.projecten {
+    margin-top: 200px;
 }
 
 
@@ -143,14 +167,23 @@ section.overons {
 .about-button {
     position: relative;
     top: 180px;
-    padding: 10px 30px 10px 30px;
+    padding: 13px 40px 13px 40px;
     border: 2px solid;
     color: #fff;
     background-color: #008000;
+    transition: background-color 0.3s;
 }
+
+
+.about-button:hover {
+    color: #fff;
+    background-color: #0da80d;
+}
+
 
 h2.about-text {
     color: #000;
+    font-size: 40px;
 }
 
 span.about-h2-text {
@@ -164,6 +197,7 @@ span.about-h2-text {
     top: 150px;
     color: #707070;
     font-weight: 600;
+    font-size: 20px;
 }
 
 p.about-text {
@@ -202,7 +236,6 @@ p.about-text {
 
 
 
-
 /* start recente projecten styling  */
 
 .card-title-projecten {
@@ -215,12 +248,29 @@ p.about-text {
 }
 
 .projecten-button {
-    padding: 10px 30px 10px 30px;
+    padding: 13px 40px 13px 40px;
     border: 2px solid;
     color: #fff;
     background-color: #008000;
+    transition: background-color 0.3s;
 }
 
+.projecten-button:hover {
+    background-color: #0da80d;
+}
+
+
+.subbackground-button {
+    padding: 13px 40px 13px 40px;
+    color: #fff;
+    border: none;
+    background-color: #008000;
+    transition: background-color 0.3s;
+}
+
+.subbackground-button:hover {
+    background-color: #0da80d;
+}
 
 .section-header{
     color: #008000;
@@ -296,7 +346,7 @@ p.projecten-subtext {
     background-attachment: fixed;
     height: 700px;
     margin-top: 200px;
-    text-shadow: 5px 5px 15px black;
+    text-shadow: 3px 3px 15px black;
 }
 
 .projecten-button {
@@ -316,7 +366,10 @@ span.subbackground-h1-text {
 }
 
 .subbackground-text {
+    font-weight: normal;
+    color: #fff;
     margin-top: 30px;
+    font-size: 20px;
 }
 
 
@@ -560,10 +613,16 @@ section.project-subcards {
    .big-picture-container {
       display: none;
     }
-
-    p.paragraph-text {
-        font-size: 16px;
+ 
+    /* p.paragraph-text {
+        font-size: 16px !important;
     }
+    p.subtext-about {
+        font-size: 16px !important;
+    }
+    p.team-sub-text {
+        font-size: 16px !important;
+    } */
     
     .col-md-6.under {
         position: relative;
@@ -578,19 +637,30 @@ section.project-subcards {
         display: none;
     }
 
+    .about-text {
+        font-size: 16px;
+    }
+
     
-  .col-md-6.sepo {
+    .col-md-6.sepo {
     position: relative;
     left: 0px;
-  }
+    }
 
+    .col-md-6.hero-right {
+    display: none;
+    }
+ 
 
+    section.overons {
+    position: relative;
+    bottom: 210px;
+    }
 
 
 
 
 }
-
 
 a {
     color: #000;
@@ -601,7 +671,10 @@ a {
 
 
 
-
+.form-control {
+    border: 0;
+    border-bottom:2px solid #eee;
+}
 
 
 
@@ -688,17 +761,43 @@ section.footer {
       }
 
 
-.hero-h2-agenda {
-    font-size: 70px;
-}
 
 span.hero-h2-agenda {
-    font-size: 70px;
     text-decoration: underline #95CA95;
     text-decoration-thickness: 5px;
 }
 
 
+
+
+i.bi-geo-alt-fill {
+    color: #707070;
+}
+
+i.bi-calendar-fill {
+    color: #707070;
+}
+
+i.bi-clock-fill {
+    color: #707070;
+}
+
+.card-event-blue {
+    border: 2px solid #5596E8;
+}
+
+.card-event-green {
+    border: 2px solid #008000;
+}
+
+.social-icons {
+  display: inline-block;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-5px); /* Move the icons up by 5 pixels on hover */
+    transition: transform 0.3s ease; /* Add a transition for the transform property */
+  }
 
 
 

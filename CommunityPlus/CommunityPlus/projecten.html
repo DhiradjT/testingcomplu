@@ -21,15 +21,21 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <title>Community Plus - Home</title>
+    <title>Community Plus - Projecten</title>
   </head>
   <body>
+
+    
+    <button id="scrollToTopBtn">
+      <span>&uarr;</span>
+    </button>
+
  <!-- === NAVBAR START === -->
 
 
  <nav class="navbar navbar-expand-lg shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" /> Community Plus</a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /> Community Plus</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -138,32 +144,77 @@
 
 
 
- <!-- === CONTACT SECTION START === -->
+  <!-- === CONTACT SECTION START === -->
 
-      <section class="contact">
-        <div class="container">
-          <div class="row">
-            
-            <div class="col-md-6">
-              <h2 class="contact-header">Laat ons weten wat je vraag is.</h2>
-              <p class="contact-subheader">Vul het bijgevoegde formulier in en we zullen binnen 48 uur contact met je opnemen. Bekijk ook onze <a href="contact.html" class="link">Contact</a> pagina voor meer opties</p>
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-6">
+          <h2 class="contact-header">Laat ons weten wat je vraag is.</h2>
+          <p class="contact-subheader">Vul het bijgevoegde formulier in en we zullen binnen 48 uur <br> contact met je opnemen.</p>
+        </div>
+
+
+
+
+
+        <div class="col-md-6">
+          <form action="https://formsubmit.co/5a2e9ccfd46943900690e330c978bbde" method="POST">
+
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid" name="Voornaam" placeholder="Voornaam" required>
+                  <label for="floatingInputGrid">Voornaam*</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid" name="Achternaam" placeholder="achternaam" required>
+                  <label for="floatingInputGrid">Achternaam*</label>
+                </div>
+              </div>
             </div>
 
-            <div class="col-md-6">
-              <!-- <form action="https://formsubmit.co/dhiradj2004@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Voornaam*" required>
-                <input type="email" name="email" required>
-                <input type="hidden" name="_autoresponse" value="your custom message">
-                <button type="submit">Send</button>
-           </form> -->
+            <div class="row g-2 mt-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputGrid" name="E-mail" placeholder="email" required>
+                  <label for="floatingInputGrid">Email*</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGrid" name="Telefoonnummer" placeholder="telefoonnummer">
+                  <label for="floatingInputGrid">Telefoonnummer</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mt-3">
+              <textarea class="form-control" placeholder="Licht je vraag toe" id="floatingTextarea2" name="Vraag" required style="height: 150px"></textarea>
+              <label for="floatingTextarea2">Licht je vraag toe.....</label>
+            </div>
 
-           </div>
+            <input type="hidden" name="_autoresponse" value="your custom message">
+            <br>
+            <div class="col-12">
+              <p class="contact-footer-text">Om het formulier in te dienen, moet u de gegevens vertrekken met het * </p>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <p>Ik ga akkoord met Community Plus die de gegevens die op dit formulier worden gebruikt verwerkt en opslaat met als doel te reageren op mijn vraag.</p>
+              <br>
+              <br>
+              <button type="submit" class="link-with-icon border-0 bg-transparent">Verzenden <i class="icon"> &#10141;</i> </a></button>
+            </div>
+       </form>
 
-          </div>
-        </div>
-      </section>
-  
-      <!-- === CONTACT SECTION END === -->
+       </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === CONTACT SECTION END === -->
 
 
 
@@ -184,22 +235,22 @@
             <a href="#">Community <span class="footer-site-logo">Plus.</span> </a>
           </div>
           <ul class="list-unstyled nav-links mb-5">
-            <li><a href="#">Agenda</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
             <i class="bi bi-dot"></i>
-            <li><a href="#">Projecten</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
             <i class="bi bi-dot"></i>
-            <li><a href="#">Over Ons</a></li>
+            <li><a href="about.html">Over Ons</a></li>
             <i class="bi bi-dot"></i>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
   
           <div class="social mb-4">
             <h3>Blijf Op De Hoogte.</h3>
             <ul class="list-unstyled">
-              <li class="in"><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li class="fb"><a href="#"><i class="bi bi-instagram"></i></a></li>
-              <li class="tw"><a href="#"><i class="bi bi-linkedin"></i></a></li>
-              <li class="dr"><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li class="in"><a href="https://nl-nl.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li class="fb"><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li class="tw"><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+              <li class="dr"><a href="https://twitter.com/?lang=nl" target="_blank"><i class="bi bi-twitter"></i></a></li>
             </ul>
           </div>
   
